@@ -30,6 +30,9 @@ function RuleSet(name, match_rule, default_off) {
     // the default_off XML attribute.  Ideally we'd like this attribute to be
     // "valueless"
     this.on_by_default = false;
+    this.off_reason = default_off;
+  } else {
+    this.off_reason = null;
   }
   this.rules = [];
   this.exclusions = [];

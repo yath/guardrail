@@ -39,7 +39,11 @@ function https_prefs_init(doc) {
     // This pref should always have been created by the RuleSet constructor
     var enabled = o_httpsprefs.getBoolPref(ruleset.name);
     newopt.setAttribute("id", id_prefix + ruleset.name);
-    newopt.setAttribute("label",ruleset.name);
+    var label = ruleset.name;
+    if (ruleset.off_reason) {
+      label += " ["+ruleset.off_reason+"]";
+    }
+    newopt.setAttribute("label", label);
     newopt.setAttribute("preference",null);
     newopt.setAttribute("type", "checkbox");
     newopt.setAttribute("checked", enabled);
