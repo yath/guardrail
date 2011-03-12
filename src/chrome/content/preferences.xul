@@ -24,13 +24,7 @@
         <caption label="Which HTTPS redirection rules should apply?" 
                align="center"/>
         <hbox flex="1" style="overflow:auto">
-          <grid class="indent" align="center">
-            <columns>
-             <column/> <column/> <column/> <column/> <column/>
-            </columns>
-            <rows id="https_everywhere_RuleSetList"/>
-          </grid>
-          <seperator orient="vertical" width="40" flex="1"/>
+          <listbox id="https_everywhere_RuleSetList" flex="1"/>
         </hbox>
         <vbox>
             You can learn how to write your own rulesets (to add support for other web sites)

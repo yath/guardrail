@@ -34,27 +34,18 @@ function https_prefs_init(doc) {
   for (var i = 0; i < rulesets.length; i++) {
     var ruleset = rulesets[i];
 
-    if (i % row_width == 0) {
-      hbox = doc.createElement("row");
-    }
-
-    var newopt = doc.createElement("checkbox");
+    var newopt = doc.createElement("listitem");
 
     // This pref should always have been created by the RuleSet constructor
     var enabled = o_httpsprefs.getBoolPref(ruleset.name);
     newopt.setAttribute("id", id_prefix + ruleset.name);
     newopt.setAttribute("label",ruleset.name);
     newopt.setAttribute("preference",null);
+    newopt.setAttribute("type", "checkbox");
     newopt.setAttribute("checked", enabled);
     newopt.setAttribute("oncommand",
                         "https_settings_changed(document)");
-    hbox.appendChild(newopt);
-    if (i % row_width == 0) {
-      rs.appendChild(hbox);
-    }
-
-    prefs_window.height = (screen.height*0.7).toString();
-    prefs_window.width = screen.width.toString();
+    rs.appendChild(newopt);
   }
   // Do this here rather than in the .xul so that it goes after all these
   // postpendments
