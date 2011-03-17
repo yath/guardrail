@@ -65,7 +65,9 @@ if [ "$1" = "uncommitted" ]; then
     # current patterns (2010-11-09)
     zip -X -q -9r "../$XPI_NAME" . "-x@../.gitignore"
 else
-    git archive --format=zip -9 "$TARG" . > "../$XPI_NAME"
+    # FIXME git archive does not process the submodule content
+    #git archive --format=zip -9 "$TARG" . > "../$XPI_NAME"
+    zip -X -q -9r "../$XPI_NAME" . "-x@../.gitignore"
 fi
 
 ret="$?"
