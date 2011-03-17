@@ -1,3 +1,4 @@
+<!-- foobar -->
 <ruleset name="Kabel Deutschland">
   <target host="kabeldeutschland.de" />
   <target host="www.kabeldeutschland.de" />
