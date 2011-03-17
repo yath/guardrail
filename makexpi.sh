@@ -1,5 +1,5 @@
 #!/bin/sh
-APP_NAME=https-everywhere
+APP_NAME=guardrail
 
 # builds a .xpi from the git repository, placing the .xpi in the root
 # of the repository.
