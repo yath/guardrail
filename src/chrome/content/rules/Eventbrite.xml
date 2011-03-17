@@ -1,6 +1,0 @@
-<ruleset name="Eventbrite">
-  <target host="eventbrite.com" />
-  <target host="*.eventbrite.com" />
-
-  <rule from="^http://([^/:@]*\.)?eventbrite\.com/" to="https://$1eventbrite.com/" />
-</ruleset>

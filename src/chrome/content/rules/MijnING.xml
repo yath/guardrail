@@ -1,4 +1,0 @@
-<ruleset name="Mijn ING">
-  <target host="mijn.ing.nl" />
-  <rule from="^http://mijn\.ing\.nl/" to="https://mijn.ing.nl/"/>
-</ruleset>

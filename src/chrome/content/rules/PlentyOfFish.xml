@@ -1,6 +1,0 @@
-<ruleset name="PlentyOfFish">
-  <target host="plentyoffish.com" />
-  <target host="www.plentyoffish.com" />
-
-  <rule from="^https?://(www\.)?plentyoffish\.com/" to="https://www.plentyoffish.com/"/>
-</ruleset>

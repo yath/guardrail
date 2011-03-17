@@ -1,7 +1,0 @@
-<ruleset name="Pastebin.com">
-  <target host="pastebin.com" />
-  <target host="www.pastebin.com" />
-
-  <rule from="^http://(www\.)?pastebin\.com/" to="https://pastebin.com/"/>
-</ruleset>
-

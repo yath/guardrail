@@ -1,0 +1,3 @@
+[submodule "src/chrome/content/rules"]
+	path = src/chrome/content/rules
+	url = git://github.com/guardrail/guardrail-rules.git

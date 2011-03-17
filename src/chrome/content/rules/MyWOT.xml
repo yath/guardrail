@@ -1,6 +1,0 @@
-<ruleset name="MyWOT">
-  <target host="mywot.com" />
-  <target host="www.mywot.com" />
-
-  <rule from="^http://(www\.)?mywot\.com/" to="https://www.mywot.com/"/>
-</ruleset>

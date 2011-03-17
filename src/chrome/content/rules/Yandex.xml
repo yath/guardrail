@@ -1,5 +1,0 @@
-<ruleset name="Mail.Yandex">
-  <target host="mail.yandex.ru" />
-
-  <rule from="^http://mail\.yandex\.ru/" to="https://mail.yandex.ru/"/>
-</ruleset>

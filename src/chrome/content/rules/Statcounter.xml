@@ -1,8 +1,0 @@
-<ruleset name="Statcounter">
-  <target host="statcounter.com" />
-<!-- cert warning -->
-<!--  <target host="www.statcounter.com" /> -->
-
-  <rule from="^http://(www\.)?statcounter\.com/" to="https://statcounter.com/"/>
-</ruleset>
-

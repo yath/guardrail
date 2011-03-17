@@ -1,6 +1,0 @@
-<ruleset name="Adbrite">
-    <target host="www.adbrite.com" />
-    <target host="adbrite.com" />
-
-    <rule from="^http://([^/:@]*)\.adbrite\.com/" to="https://$1.adbrite.com/"/>
-</ruleset>
